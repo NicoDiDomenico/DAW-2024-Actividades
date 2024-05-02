@@ -538,7 +538,7 @@ a:hover{
         flex-wrap: wrap;
         z-index: 10;
     }
-
+*/
     .hamburguesa{
         display: block;
         position: absolute;
@@ -549,7 +549,7 @@ a:hover{
         top: 5px;
         z-index: 1000
     }
-
+/*
     .hamburguesa-input{
         display: none;
     }
@@ -559,7 +559,8 @@ a:hover{
         background-color: orange;
         position: absolute;
         top: var(--al);
-    } */
+    } 
+*/
 
     .texto-imagen {
         /* border: solid pink; */
