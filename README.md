@@ -5,6 +5,6 @@
 - 2da clase de CSS. Vimos breakpoints y media queries para responsive design
 - Aprendimos GitHub-Pages. (para que el link se muestre correctamente debo tener un minimo archivo index.html en el repositorio)
 - link GitHub-Pages: https://nicodidomenico.github.io/DAW-2024-Actividades/
-- link PR: 
+- link PR: https://github.com/NicoDiDomenico/DAW-2024-Actividades/pull/4
 - Pude adaptar la noticia a mobile pero sin la funicon del menu hambuguesa.
 - Dudas para el profe: el punto 3. pedia "Se deberá mostrar un menú hamburguesa cuando el dispositivo sea mobile...", no supe como hacerlo.
