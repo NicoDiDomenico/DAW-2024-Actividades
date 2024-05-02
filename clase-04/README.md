@@ -1,0 +1,6 @@
+- Aquí se encontraran todas las actividades que se realicen en la materia DAW de UAI 2024.
+- README modificado en rama DAW-04.
+- Noticia elegida: https://www.lanacion.com.ar/salud/entrenamiento-los-beneficios-de-hacer-ejercicio-bajo-la-lluvia-nid15042024/
+- Se usó el Formulario de la clase 3
+- Iniciamos con CSS. Position relative y absolute + Pixel Perfect
+- link PR: https://github.com/NicoDiDomenico/DAW-2024-Actividades/pull/3

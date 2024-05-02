@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acceso Digital</title>
+</head>
+<body>
+    <header>
+        <h1><a href="https://www.lanacion.com.ar/">LA NACIÓN</a></h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Volver</a></li>
+                <li><a href="">Iniciar Sesión </a></li>
+            </ul>
+        </nav>
+    </header>
+    <main> #<!-- Bien usado el main -->
+        <h2>Formulario de Suscripcion</h2>
+        <form action="#" method="get" target="_blank" >
+        <!-- usé method="get" y no method="post" porque considero que no se manipulan datos sensibles para la suscripcion, ya que no seria un inicio de secion -->
+            <fieldset>
+                <legend>Datos Usuario</legend>
+                <div>
+                    <label for="nombre">Nombre:</label><br>
+                    <input type="text"  id="nombre" name="unNombre" required>
+                </div>
+                <br>
+                <div>
+                    <label for="apellido">Apellido:</label><br>
+                    <input type="text"  id="apellido" name="unApellido" required>
+                </div>
+                <br>
+                <div>
+                    <label for="email">Email:</label><br>
+                    <input type="email"  id="email" name="unEmail" required>
+                </div>
+                <br>
+                <div>
+                    <label for="telefono">Telefono:</label><br>
+                    <input placeholder="Opcional" type="tel" id="telefono" name="unEmail" >
+                </div>
+                <br>
+                <div>
+                    <legend>Sexo:</legend>
+                    <input type="radio" id="F" name="sexo" value="F">
+                    <label for="F">Femenino</label>
+                    <br>
+                    <input type="radio" id="M" name="sexo" value="M">
+                    <label for="M">Masculino</label>
+                </div>
+                <br>
+                <div>
+                    <label for="pais">Pais:</label><br>
+                    <select name="paises" id="pais">
+                        <option value="argentina">Argentina</option>
+                        <option value="uruguay">Uruguay</option>
+                        <option value="brasil">Brasil</option>
+                        <option value="chile">Chile</option>
+                        <option value="bolivia">Bolivia</option>
+                        <option value="paraguay">Paraguay</option>
+                    </select>
+                </div>
+                <br>
+                <div>
+                    <label for="comentarioId">Comentarios:</label><br>
+                    <textarea placeholder="Opinión sobre el diario" id="comentarioId" rows="10" cols="60"></textarea>
+                </div>
+                <br>
+                <button type="reset">Limpiar</button>
+            </fieldset>
+            <br>
+            <div>
+            <button type="submit">Suscribirse</button>
+            <a href="index.html">
+                <button type="button">Cancelar</button>
+            </a>
+            </div>
+        </form>
+    </main>
+    <br>
+    <footer>
+        <p>¿Dudas? 
+        <a rel="noopener noreferrer" href="https://micuenta.lanacion.com.ar/ayuda" target="_blank">Consultá las Preguntas Frecuentes</a>
+        </p>
+    </footer>
+</body>
+</html>
