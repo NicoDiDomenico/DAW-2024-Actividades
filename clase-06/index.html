@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Diario</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /> <!-- Lupa -->
+    <style>
+        #lupa{
+            color: black;
+            font-weight: 700;
+            font-size: 35px;
+        }
+        #boton{
+            background-color: #000000; 
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+            font-weight: 600;
+            color: #FFFFFF; 
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer; /* Cambiar cursor al pasar por encima */
+            transition: background-color 0.3s; /* Transición suave para el color de fondo */
+        }
+        #boton:hover {
+            background-color: gray;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="conteiner-1">
+            <ul class="arriba">
+                <li><span id="lupa" class="material-symbols-outlined">search</span></li>
+                <li><a href="">MiDiario</a></li>
+                <li><a href=""><button id="boton">Iniciar Sesión</button></a></li> <!-- Me hubiese gustado sacarlo en la version mobile, pero no sabia como -->
+            </ul>
+            <p class="hamburguesa"><a class="hamburguesa" href="">☰</a></p>
+            <ul class="abajo">
+                <li><a href="">Política</a></li>
+                <li><a href="">Economía</a></li>
+                <li><a href="">Sociedad</a></li>
+                <li><a href="">Deportes</a></li>
+                <li><a href="">Cultura</a></li>
+                <li><a href="">Salud</a></li>
+            </ul>
+        </nav>
+        <div class="conteiner-2">
+            <a href="https://www.marca.com/futbol/mundial/campeon.html"><img src="https://wallpapercave.com/wp/wp12498078.jpg" alt="noticia-relevante"></a>
+            <h2>Argentina Campeona del Mundo</h2>
+            <h3>Messi la consiguió</h3>
+            <p class="texto-breve">Argentina se coronó campeona del mundo en una emocionante final contra su rival histórico. Lionel Messi, líder del equipo, brilló en el partido decisivo y llevó a su equipo a la victoria con un gol en el tiempo de descuento.</p>
+        </div>
+    </header>
+    <div class="conteiner-3"> <!-- Hará de contenedor para el main y el aside -->
+        <main class="caja-1">
+            <section class="sec-1"> <!-- Hará de contenedor para los articulos del main-->
+                <article class="art-1">
+                    <a href="https://www.clarin.com/deportes/boca-jugada-fatal-minuto-90-fortaleza-sudamericana-culpa-lema-defensa-toda-dt-diego-martinez_0_WWXPDAFycP.html"><img src="https://www.clarin.com/img/2024/05/16/MTt1de4CS_1256x620__1.jpg" alt=""></a>
+                    <p><strong>Boca y la jugada fatal en el minuto 90 contra Fortaleza en la Sudamericana, ¿culpa de Lema y la defensa o toda del DT Diego Martínez?</strong></p>
+                </article>
+                <article class="art-1">
+                    <a href="https://www.clarin.com/revista-n/atragantada-sandwich-jamon-horrible-mito-muerte-cass-elliot-patito-feo-the-mamas-the-papas_0_gWfpIdJxqc.html"><img src="https://www.clarin.com/img/2024/05/16/YmMDCt2GX_1256x620__1.jpg" alt=""></a>
+                    <p><strong>Atragantada con un sandwich de jamón: el horrible mito sobre la muerte de Cass Elliot, el “patito feo” de The Mamas & the Papas</strong></p>
+                </article>
+                <article class="art-1">
+                    <a href="https://www.lanacion.com.ar/lifestyle/cuidado-cuerpo-belleza/calidad-del-sueno-la-razon-cientifica-por-la-que-deberias-escuchar-musica-antes-de-dormir-nid10042024/"><img src="https://www.lanacion.com.ar/resizer/v2/una-serie-de-estudios-demostraron-los-beneficios-N22IDSJEMNGHDHOVEOMB5YSLLE.jpg?auth=0dc3547f3a6e24ab08b11f61a79ce6fed4117ed0562e7e40a7cd14fae619d5f4&width=880&height=586&quality=70&smart=true" alt=""></a>
+                    <p><strong>Calidad del sueño: la razón científica por la que deberías escuchar música antes de dormir</strong></p>
+                </article>
+            </section>
+        </main>
+        <aside class="caja-2"> <!-- Hará de contenedor para los articulos del aside-->
+            <div class="art-2">
+                <a href="https://www.infobae.com/noticias/2024/05/15/que-santo-se-festeja-hoy-onomasticos-del-15-de-mayo/"><img src="https://www.infobae.com/new-resizer/_0W3NMOpJ5zPXt0DkTI6QmvAjR8=/768x432/filters:format(webp):quality(85)/cloudfront-us-east-1.images.arcpublishing.com/infobae/RO4TXTDZ45FPHL4HMN3GQVQVE4.jpg" alt=""></a>
+                <p><strong>Qué santo se festeja hoy: onomásticos del 15 de mayo</strong></p>
+            </div>
+            <div class="art-2">
+                <a href="https://www.infobae.com/salud/ciencia/2024/05/15/un-estudio-revela-si-la-regla-de-los-cinco-segundos-con-la-comida-que-cae-al-piso-realmente-funciona/"><img src="https://www.infobae.com/new-resizer/kYFZbIPkUJtNd4AuP9Gtatv4i-E=/768x432/filters:format(webp):quality(85)/cloudfront-us-east-1.images.arcpublishing.com/infobae/2SXRXNZ7QNFL3HLAWUM2KSI4HA.jpg" alt=""></a>
+                <p><strong>Un estudio revela si “la regla de los cinco segundos” con la comida que cae al piso realmente funciona</strong></p>
+            </div>
+            <div class="art-2">
+                <a href="https://www.infobae.com/entretenimiento/2024/05/16/danny-trejo-de-drogadicto-y-delincuente-a-icono-del-cine-a-sus-80-anos-la-historia-del-eterno-machete/"><img src="https://www.infobae.com/new-resizer/SMBDojwg-6V0COKZ1h3x7lmlNKA=/768x432/filters:format(webp):quality(85)/cloudfront-us-east-1.images.arcpublishing.com/infobae/4OLQDI7MHJGYDOC3CGFE65CAXA.jpg" alt=""></a>
+                <p><strong>Danny Trejo: de drogadicto y delincuente a ícono del cine a sus 80 años, la historia del eterno “Machete”</strong></p>
+            </div>
+            <div class="art-2">
+                <a href="https://www.lanacion.com.ar/salud/entrenamiento-los-beneficios-de-hacer-ejercicio-bajo-la-lluvia-nid15042024/"><img src="https://www.lanacion.com.ar/resizer/v2/el-entrenamiento-bajo-la-lluvia-suele-potenciar-ISI3JQ7EJ5BXNP7E3K4QL4ZRRI.jpg?auth=5449fd9831cb4b152793ab7a6d191822bea945b19ae774038bf18e1cc3381547&width=1920&height=1280&quality=70&smart=true" alt=""></a>
+                <p><strong>Entrenamiento: los beneficios de hacer ejercicio bajo la lluvia”</strong></p>
+            </div>
+            <div class="art-2">
+                <a href="https://www.lanacion.com.ar/salud/mente/que-pasa-en-tu-cerebro-cuando-estas-scrolleando-tu-celular-y-3-consejos-para-evitar-hacerlo-nid13052024/"><img src="https://www.lanacion.com.ar/resizer/v2/desde-ese-primer-clic-que-enciende-la-pantalla-3JEU7OFL3JBILK7G5BDL73HRUU.jpg?auth=9c087341bd53e2cfe7e6e7b17f1fd9cab348c1c291d10b70571fdcd166294879&width=880&height=586&quality=70&smart=true" alt=""></a>
+                <p><strong>Qué pasa en tu cerebro cuando estás scrolleando tu celular y 3 consejos para evitar hacerlo compulsivamente</strong></p>
+            </div>
+        </aside>
+    </div>
+    <footer class="conteiner-4">
+        <nav class="caja-3">
+            <ul class="subcaja-1">
+                <li><a href="">Economía</a></li>
+                <li><a href="">Medio Oriente</a></li>
+                <li><a href="">Energía</a></li>
+                <li><a href="">Norteamérica</a></li>
+            </ul>
+            <ul class="subcaja-2">
+                <li><a href="">China</a></li>
+                <li><a href="">Deportes</a></li>
+                <li><a href="">Asia</a></li>
+                <li><a href="">Carta de Lectores</a></li>
+            </ul>
+            <ul class="subcaja-3">
+                <li><a href="">Latinoamérica</a></li>
+                <li><a href="">Coronavirus</a></li>
+                <li><a href="">Cultura</a></li>
+                <li><a href="">Mundo</a></li>
+            </ul>
+            <ul class="subcaja-4">
+                <li><a href="">Europa</a></li>
+                <li><a href="">África</a></li>
+                <li><a href="">Argentina</a></li>
+                <li><a href="">Europa del Este</a></li>
+            </ul>
+        </nav>
+        <br>
+        <div class="caja-4">
+            <p>&copy; Copyright 2024 SA MiDiario | Todos los derechos reservados. Dirección Nacional del Derecho de Autor DNDA.</p>
+            <p>Queda prohibida la reproducción total o parcial del presente diario.</p>
+            <p><strong>Protegido por reCAPTCHA: </strong><a href="https://policies.google.com/terms?hl=es-419">Condiciones</a> - <a href="https://policies.google.com/privacy?hl=es-419">Privacidad</a></p>
+        </div>
+    </footer>
+</body>
+</html>
