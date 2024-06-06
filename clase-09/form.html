@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acceso Digital</title>
+    <link rel="stylesheet" href="styles_form.css">
+</head>
+<body>
+    <header>
+        <h1><a href="https://www.lanacion.com.ar/">LA NACIÓN</a></h1>
+        <nav>
+            <ul class="nav-list">
+                <li><a href="index.html">Volver</a></li>
+                <li><a href="#">Iniciar Sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form action="#" method="get" target="_blank">
+            <fieldset>
+                <legend><strong>Datos Usuario</strong></legend> <!-- Problema: no sé por qué cuadno escribo en el campo del nombre completo se repite al lado de Datos Usuario -->
+                <div class="form-group">
+                    <label for="nombre">Nombre completo:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                    <div id="nombreError" class="error-message"></div>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <div id="emailError" class="error-message"></div>
+                </div>
+                <div class="form-group">
+                    <label for="contraseña">Contraseña:</label>
+                    <input type="password" id="contraseña" name="contraseña" required>
+                    <div id="contraseñaError" class="error-message"></div>
+                </div>
+                <div class="form-group">
+                    <label for="repContraseña">Repetir Contraseña:</label>
+                    <input type="password" id="repContraseña" name="repContraseña" required>
+                    <div id="repContraseñaError" class="error-message"></div>
+                </div>
+                <div class="form-group">
+                    <label for="edad">Edad:</label>
+                    <input type="number" id="edad" name="edad" required>
+                    <div id="edadError" class="error-message"></div>
+                </div>
+                <div class="form-group">
+                    <label for="telefono">Teléfono:</label>
+                    <input placeholder="Opcional" type="tel" id="telefono" name="telefono">
+                    <div id="telefonoError" class="error-message"></div>
+                </div>
+                <div class="form-group">
+                    <label for="direccion">Dirección:</label>
+                    <input type="text" id="direccion" name="direccion" required>
+                    <div id="direccionError" class="error-message"></div>
+                </div>
+                <div class="form-group">
+                    <label for="ciudad">Ciudad:</label>
+                    <input type="text" id="ciudad" name="ciudad" required>
+                    <div id="ciudadError" class="error-message"></div>
+                </div>
+                <div class="form-group">
+                    <label for="codigoPostal">Código Postal:</label>
+                    <input type="text" id="codigoPostal" name="codigoPostal" required>
+                    <div id="codigoPostalError" class="error-message"></div>
+                </div>
+                <div class="form-group">
+                    <label for="dni">DNI:</label>
+                    <input type="text" id="dni" name="dni" required>
+                    <div id="dniError" class="error-message"></div>
+                </div>
+                <div class="button-group">
+                    <button type="submit">Enviar</button>
+                    <a href="index.html">
+                        <button type="button">Cancelar</button>
+                    </a>
+                </div>
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        <p>¿Dudas? 
+        <a rel="LN" href="https://micuenta.lanacion.com.ar/ayuda" target="_blank">Consultá las Preguntas Frecuentes</a>
+        </p>
+    </footer>
+    
+    <!-- Modales para los mensajes de éxito y error -->
+    <div id="modalError" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeModalError">&times;</span>
+            <p id="modalErrorMessage"></p>
+        </div>
+    </div>
+    
+    <div id="modalSuccess" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeModalSuccess">&times;</span>
+            <p id="modalSuccessMessage"></p>
+        </div>
+    </div>
+
+    <script src="validations.js"></script>
+</body>
+</html>
