@@ -17,9 +17,10 @@
         </nav>
     </header>
     <main>
-        <form action="#" method="get" target="_blank">
+        <form id="formulario" action="#" method="get" target="_blank">
+
             <fieldset>
-                <legend><strong>Datos Usuario</strong></legend> <!-- Problema: no sé por qué cuadno escribo en el campo del nombre completo se repite al lado de Datos Usuario -->
+                <legend><strong>Datos Usuario</strong></legend>
                 <div class="form-group">
                     <label for="nombre">Nombre completo:</label>
                     <input type="text" id="nombre" name="nombre" required>
@@ -70,6 +71,7 @@
                     <input type="text" id="dni" name="dni" required>
                     <div id="dniError" class="error-message"></div>
                 </div>
+                
                 <div class="button-group">
                     <button type="submit">Enviar</button>
                     <a href="index.html">
@@ -88,7 +90,7 @@
     <!-- Modales para los mensajes de éxito y error -->
     <div id="modalError" class="modal">
         <div class="modal-content">
-            <span class="close" id="closeModalError">&times;</span>
+            <span class="close" id="closeModalError">&times;</span> <!-- &times = a símbolo de cerrar -->
             <p id="modalErrorMessage"></p>
         </div>
     </div>
