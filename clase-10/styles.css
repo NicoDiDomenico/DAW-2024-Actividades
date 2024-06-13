@@ -1,0 +1,676 @@
+body{
+    background-color:#FFFFFF;
+}
+
+header{
+    position: relative; 
+    width: 100%;
+    height: auto;
+    /* border: solid yellow; */
+}
+
+.contenedor-imagen{
+    /* border: solid slateblue; */
+    position: relative; 
+    width: 100%;
+    height: 918px;
+    overflow: hidden; /* Para que la imagen no se me desborde */
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;  
+    position: absolute; /* podia usa fixed para que baje igual que la pagina pero despues no sabia como hacer que se cambien todos los colores al bajar */
+    padding: 5px 0px;
+    width: 100%;
+    background-color: #5D6663;
+    z-index: 3;
+    /* border: solid maroon; */
+}
+
+.navbar a{
+    position: relative;
+    bottom: 4px;
+    font-size: 40px;
+    text-decoration: none;
+    color: white;
+    font-family: "Platypi", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    padding-left: 90px;
+    font-weight: 700
+}
+
+.navbar a.nac{
+    letter-spacing: 4px;  
+    padding-left: 125px;
+}
+
+.navbar-izquierda{
+   position: relative;
+   left: 300px; 
+}
+
+.navbar-derecha{
+    position: relative;
+    right: 300px;
+}
+
+.navbar-izquierda a,
+.navbar-derecha a{
+    top: 25%;
+    font-size: 20px;
+    padding: 0 20px;
+ }
+
+.navbar-izquierda a{
+    font-size: 14px;
+    font-family: Arial;
+    font-weight: 400;
+    padding: 9px 15px;
+ }
+
+ .navbar-derecha a{
+    font-size: 16px;
+    font-family: Arial;
+    font-weight: 550;
+    border: solid white 1px;
+    border-radius: 5px;
+    padding: 9px 15px;
+ }
+
+.navbar-izquierda span{
+    position: absolute;
+    font-size: 30px;
+    color: white;
+    padding-top: 6px;
+    padding-left: 18px;
+}
+
+.imagen-encabezado {
+    /* border: solid black; */
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.imagen-encabezado::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%); /* Sinceramente para replicar la cosa esta lo googlie */
+    z-index: 2; 
+}  
+
+.imagen-encabezado img {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    z-index: 1;
+}
+
+.contenedor-imagen div:hover{
+    filter: brightness(1.3);
+    transition: filter 0.2s ease
+}
+
+.texto-imagen {
+    /* border: solid pink; */
+    position: absolute ;
+    z-index: 2;
+    text-align: left;
+    bottom: 50px;
+    left: 320px;
+}
+
+.texto-imagen h2{ /* Preguntarle al profe como ajusto el texto igual que el de la pagina, ya que se ve un salto de linea */
+    font-size: 48px;
+    font-family: Prumo, Georgia, serif;
+    color: white;
+    bottom: 0px;
+    margin: 0 0 8px;
+} 
+
+.texto-imagen a img{
+    width: 12%;
+    height: auto;
+} 
+
+.texto {
+    text-align: left;
+    margin-left: 320px;
+ } 
+
+.texto p{
+   /*  border: solid blue; */
+    font-size: 16 px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333333; 
+    margin: 15px 0
+} 
+
+.texto p.extra{
+    color: #919191;
+ }
+
+.cuerpo {
+    position: relative;
+    /* border: solid navy; */
+    width: 40%;
+    left: 25%;
+    margin-top: -15px;
+}
+
+.cuerpo img{
+    width: 100%;
+    height: auto;
+    object-fit: cover; 
+}
+
+.cuerpo h3{
+    font-size: 24px;
+    font-family: Prumo,Georgia,"serif";
+    color: #333333;
+    margin: 0px 0px 8px
+}
+
+.cuerpo p{
+    font-size: 19px;
+    font-family: Georgia, serif;
+    line-height: 1.875rem;
+    color: #333333;
+    margin: 0px 0px 32px;
+}
+
+.cuerpo p.distinto{
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5rem;
+    color: #5a5a5a;
+    margin: 0
+}
+
+#tnyt{
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.cuerpo p.primero::first-letter{
+    font-size: 70px;
+    font-family: Prumo,Georgia,"serif";
+    float: left;
+    color: black;
+    padding-top:  16px;
+    padding-right: 10px
+}
+
+.cuerpo p.lluvia-1{
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5rem;
+    color: #333333;
+    margin: 0;
+    padding: 0
+}
+
+.cuerpo p.lluvia-2{
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5rem;
+    color: #919191;
+    margin: 0;
+    padding-bottom: 5px;
+    line-height: 1.5rem;
+    border-bottom: 1px solid #e4e4e4;
+}
+
+.cuerpo div.publicidad-1{
+    height: 28.125rem;
+    text-align: center;
+    border: dashed 0.5px;
+    margin: 0 0 64px
+}
+
+.cuerpo div.publicidad-2{
+    height: 5.625rem;
+    text-align: center;
+    border: dashed 0.5px;
+    margin: 0 0 64px
+}
+
+.cuerpo h3.fanatico{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    color: #333333;
+    margin: 0px 0px 16px
+} 
+
+.cuerpo h4{
+    font-size: 20px;
+    font-family: Prumo,Georgia,"serif";
+    font-weight: 700;
+    color: #333333;
+    text-decoration: underline yellow 2px;
+    margin: 0px 0px 8px
+} 
+
+.cuerpo h5{
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    text-decoration: underline yellow 2px;
+    color: #333333;
+    margin: 0px 0px 8px
+} 
+
+div.cuadrito-1{
+    padding: 16px 16px 0px 16px;
+    margin: 0 0 40px 0;
+    border: solid grey 0.5px;
+}
+
+p.parrafitos{
+    padding: 0 0 10px 0;
+    margin: 0
+}
+
+.boton {
+    width: 100%;
+    font-size: 12px;
+    font-family: Arial;
+    color: #7267C3;
+    padding: 12px 16px;
+    margin: 0 0 32px
+}
+
+.cuerpo img.bienestar{
+    width: 8.0625rem;
+    height: 1.375rem;
+    margin: 0 0 20px;
+}
+
+div.linea{
+    position: relative;
+    width: 80%;
+    left: 10%;
+    height: auto;
+    border-bottom: 1px solid #e4e4e4;
+    padding: 2px 0
+}
+
+#bajo-linea{
+    width: 50%;
+    position: relative;
+    color: rgb(212, 201, 201, 90%);
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    left: 25%;
+    padding-top: 30px;
+    margin: 0;
+}
+
+footer{ 
+    /* width: 40%;*/
+    /* border: solid navy; */
+    margin: 150px 270px;
+    padding: 20px;
+    position: relative;
+    /*left: 25%; */
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px; 
+    color: #5a5a5a; 
+}
+
+footer div.nacion{
+    line-height: 1.5rem;
+    border-bottom: 1px solid #e4e4e4;
+}
+
+footer div a img{ /* no sabia como centrar la imagen */
+    width: 12.5rem;
+    margin-left: 562px;
+    margin-bottom: 13px;
+}
+
+footer div .primera{
+    height: auto;
+    width: 100%;
+    border: #333333 solid black;
+    margin: 20px;
+    padding: 20px;
+    position: relative;
+} 
+
+footer div.seccion{
+    height: auto;
+    width: 50%;
+    margin: 0;
+    padding: 20px;
+}
+
+footer div.subseccion{
+    position: absolute;
+    top: 127px;
+    left: 300px;
+}
+
+footer div.revista{
+    height: auto;
+    width: 50%;
+    margin: 0;
+    padding: 20px;
+    position: absolute;
+    top: 60px;
+    right: 190px;
+}
+
+footer div.subrevista-1{
+    position: absolute;
+    top: 34px;
+    left: 270px;
+}
+
+footer div.subrevista-2{
+    position: absolute;
+    top: 34px;
+    left: 520px;
+}
+
+li.titulo,
+.ultima p{
+    color: #333333;
+}
+
+.ultima p.a{
+    margin: 25px 0 4px 0;
+
+}
+
+.ultima p.b{
+    margin: 4px 0 25px 0;
+}
+
+li{
+    list-style-type: none;
+    padding: 8px 0px;
+}
+
+.ultima a{
+    text-decoration: none;
+    color: #333333;
+}
+
+.ultima .gda{
+    position: absolute;
+    right: 70px;
+    bottom: 20px;
+}
+
+.ultima .gda img.a{
+    position: absolute;
+    height: 20px;
+    bottom: 14px;
+    right: 285px;
+}
+
+.ultima .gda img.b{
+    position: absolute;
+    height: 48px;
+    bottom: 2px;
+    right: -40px;
+}
+
+a:hover{
+    text-decoration: none;
+    color: #959595;
+}
+
+#morado{
+    text-decoration: none;
+    color: #7267c3;
+}
+
+#escuchar{
+    width: 100px;
+    font-size: 12px;
+    font-family: Arial;
+    font-weight: 550;
+    text-align: right;
+    color: #FFFFFF;
+    border: solid #0250C9 1px;
+    background-color: #0250C9;
+    border-radius: 5px;
+    padding: 3px 16px 10px;
+    margin-bottom: 45px;
+}
+
+#escuchar span{
+    position: relative;
+    top: 5px;
+}
+
+.hamburguesa{
+    display: none;
+}
+
+/* ------------------------------------------------------------------------------- */
+
+/* Aplicando conceptos de Mediaqueries y breackpoint para diseño responsive design */
+/* Mobile */
+       /* orientation: landscape/portrait  --> No me acuerdo que era esto, preguntar al profe*/
+       /* print, all */
+@media screen and (max-width: 640px)
+{               /*( breakpoint     )*/
+                  /* de 0 a 640px se aplica lo que está sentro de este bloque. */
+ 
+    body{
+        width: 100%;
+    }
+    header{
+        width: 100%;
+    }
+    .navbar {
+        display: inline;
+        justify-content: space-between;  
+        position: absolute; /* podia usa fixed para que baje igual que la pagina pero despues no sabia como hacer que se cambien todos los colores al bajar */
+        padding: 5px 0px;
+        width: 100%;
+        background-color: #5D6663;
+        z-index: 3;
+        /* border: solid maroon; */
+    }
+
+    .navbar-derecha {
+        display: none;
+    }
+
+    .navbar a.nac{
+        letter-spacing: 4px;  
+        /* padding-left: 220px; */
+        font-size: 35px;
+        left: 220px
+    }
+
+    .navbar a.nac {
+        letter-spacing: 4px;
+        padding-left: 0;
+    }
+
+    .navbar a {
+        position: relative;
+        bottom: 4px;
+        font-size: 40px;
+        text-decoration: none;
+        color: white;
+        font-family: "Platypi", serif;
+        font-optical-sizing: auto;
+        font-weight: 300;
+        font-style: normal;
+        padding-left: 0;
+        font-weight: 700;
+    }
+
+    .navbar-izquierda a{
+        display: none;
+     }
+
+    .navbar-izquierda span{
+        position: absolute;
+        font-size: 30px;
+        color: white;
+        padding-top: 7px;
+        padding-left: 250px
+    }
+/* --- Esto fue un intento de hacer un menu hamburguesa ☰ desplegable en mobile, esto lo pedia el punto 3. -> pedir ayuda --- */
+/*     .menu-hamburguesa{
+        position: relative;
+        height: 100%;
+        display: block;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        z-index: 10;
+    }
+*/
+    .hamburguesa{
+        display: block;
+        position: absolute;
+        z-index: 4;
+        color: white;
+        font-size: 28px;
+        left: -200px;
+        top: 5px;
+        z-index: 1000
+    }
+/*
+    .hamburguesa-input{
+        display: none;
+    }
+
+    .ul_links{
+        width: 100%;
+        background-color: orange;
+        position: absolute;
+        top: var(--al);
+    } 
+*/
+
+    .texto-imagen {
+        /* border: solid pink; */
+        position: absolute ;
+        z-index: 2;
+        text-align: left;
+        bottom: 50px;
+        left: 50px;
+    }
+    
+    .texto-imagen h2{ /* Preguntarle al profe como ajusto el texto igual que el de la pagina, ya que se ve un salto de linea */
+        font-size: 48px;
+        font-family: Prumo, Georgia, serif;
+        color: white;
+        bottom: 0px;
+        margin: 0 0 8px;
+    } 
+    
+    .texto-imagen a img{
+        width: 25%;
+        height: auto;
+    } 
+    
+    .texto {
+        text-align: left;
+        margin-left: 50px;
+    } 
+        
+    .texto p{
+        /*  border: solid blue; */
+        font-size: 16 px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #333333; 
+        margin: 15px 0
+    } 
+        
+    .texto p.extra{
+        color: #919191;
+    }       
+    .cuerpo{
+        position: relative;
+        left: 0;
+        width: 80%;
+        padding: 10px 40px;
+    }
+
+    /* .cuerpo h3.fanatico{
+        color: black;
+    }  */
+
+    div.linea {
+        position: relative;
+        width: 80%;
+        left: 25px;
+        height: auto;
+        border-bottom: 1px solid #e4e4e4;
+        padding: 2px 0;
+    }
+
+    footer{ 
+    /* width: 40%;*/
+    /* border: solid navy; */
+    margin: 0;
+    padding: 0;
+    position: relative;
+    /*left: 25%; */
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px; 
+    color: #5a5a5a; 
+    }
+    
+    .nacion{
+        display: none;
+    }
+
+    .primera{
+        display: none;
+    }
+
+    .ultima{
+        width: 80%;
+        padding: 5px 40px;
+        font-size: 12px;
+    }
+
+    .ultima .a{
+        padding-bottom: 10px
+    }
+
+    .gda{
+        display: none; 
+    }
+
+}
+
+
+/* Tablet */
+
+@media screen and (min-width: 641px) and (max-width: 768px)
+{               /*( breakpoint     )*/
+                  /* de 640px a 768px se aplica lo que está sentro de este bloque, si supera 768px se aplica el resto de selectores. */       
+
+.cuerpo h3.fanatico{
+    color: blue;
+    }       
+}
+
+/* Desktop */
+/* No configure un @media para desk porque supongo que al superar 768px se tendra en cuenta mis selectores fuera del @media y esos será mi diseño desk. */
+/* Tener en cuenta que para desk se tiene en cuenta un ancho de 1024px */
+/* Duda: creo que al trabajar de esta manera, estoy haciendo desktop first ya que mi pagina está pensada para la pantalla de mi PC y despues agregue el media con 640px haciendo referencia a un diseño para telefono */ 
+
+/* ------------------------------------------------------------------------------- */
